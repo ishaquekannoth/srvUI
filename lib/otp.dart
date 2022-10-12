@@ -132,11 +132,11 @@ class OTPWidget extends StatelessWidget {
                   )),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 8, left: 10),
+              padding: const EdgeInsets.only(top: 12, left: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Text(
+                children: [
+                  const Text(
                     "Didnt Recieve OTP ? ",
                     style: TextStyle(
                         color: Color(
@@ -144,12 +144,14 @@ class OTPWidget extends StatelessWidget {
                         ),
                         fontSize: 13),
                   ),
-                  Text(
-                    "Resend",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15,
-                        color: Color(0xff787878)),
+                  GestureDetector(
+                    child: const Text(
+                      "Resend",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: Color(0xff787878)),
+                    ),
                   )
                 ],
               ),
