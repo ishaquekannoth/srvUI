@@ -13,6 +13,7 @@ class SplashScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: (Column(
+         
       children: [
         Container(
           width: size.width,

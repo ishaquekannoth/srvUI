@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:srv/images/main_page.dart';
 import 'package:srv/images/routes.dart';
 import 'package:srv/otp.dart';
 import 'package:srv/splash.dart';
@@ -13,14 +14,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+   
+      title: 'Nellikka APP',
       theme: ThemeData(
         fontFamily: GoogleFonts.mulish().fontFamily,
         primarySwatch: Colors.blue,
       ),
-      initialRoute: Routes.otp,
+      initialRoute: Routes.mainpage,
       routes: {Routes.splash: (context) => const SplashscreenWidget(),
-        Routes.otp: (context) => const OTPWidget(),},
+        Routes.otp: (context) => const OTPWidget(),
+        Routes.mainpage: (context) => const MainPage(),
+        },
 
     );
   }
